@@ -1,0 +1,224 @@
+/* css for layout 1 */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0;
+  font-size: 12px;
+}
+
+li {
+	padding-top: 10px;
+}
+
+a {
+	font-size: 12px;
+	color: #158CBA;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div#container {
+	width: 100%;
+	background-color: #F6F6F6;
+	position: relative;
+	top: -179px;
+}
+
+header {
+	background-color: #F6F6F6;
+	min-height: 40px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 176px;
+}
+
+header img {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+
+#main {
+	background-color: white;
+}
+
+#column1 {
+	background-color: white;
+	position: relative;
+	margin-left: 176px;
+	float: left;
+	padding-left: 36px;
+	padding-top: 40px;
+	border: 1px solid #A7D7F9;
+}
+
+
+#sidebar {
+	background-color: #F6F6F6;
+	width: 176px;
+	top: 10px;
+	margin-right: 690px;
+	position: relative;
+	padding-left: 24px;
+}
+
+#sidebar img {
+	top: -30px;
+	left: -10px;
+	position: relative;
+}
+
+#sidebar p {
+	top: -20px;
+	left: 2px;
+	position: relative;
+	font-size: 20px;
+}
+
+#sidebar div {
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+.h1 {
+	text-align: left;
+	font-size: 28px;
+	padding-left: 6px;
+}
+
+.h1_bottom {
+	text-align: left;
+	font-size: 16px;
+	padding-left: 6px;
+	padding-bottom: 30px;
+	position: relative;
+	top: 14px;
+	color: #999999;
+}
+
+.topic {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.light_links a {
+	font-size: 13px;
+	color: #158CBA;
+	text-decoration: none;
+	position: relative;
+}
+
+.light_links a:hover {
+	text-decoration: underline;
+	position: relative;
+}
+
+body {
+	overflow: hidden;
+	font-family: sans-serif;
+	background-color: #F6F6F6;
+	position: relative;
+}
+
+#scroll {
+	overflow: scroll;
+	height: 960px;
+}
+
+table {
+	border: 1px solid #E5E5E5;
+	border-spacing: 0px;
+	box-shadow: 0px 1px #DDDDDD;
+	position: relative;
+	background-color: #fdfdfd;
+}
+
+table, th, td {
+	border-radius: 5px;
+}
+
+th, td {
+	padding: 10px 15px;
+	line-height: 23px;
+}
+
+th {
+	text-align: left;
+}
+
+
+
+.articles td {
+	border-bottom: 1px solid #E5E5E5;
+	border-top: none;
+}
+
+.articles tr:last-child {
+	border-bottom: none;
+}
+
+.table {
+	border-spacing: 5px;
+	font-size: 14.5px;
+	color: #555555;
+	width: auto;
+}
+
+.table_header{
+	background-color: #F0F0F0;
+	font-size: 17px;
+	color: #333333;
+	font-weight: bold;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacing {
+	padding-bottom: 38px;
+}
+
+.footer {
+	min-height: 140px;
+	position: absolute;
+	bottom: -160px;
+	width: 100%;
+	left: -176px;
+	line-height: 2;
+	font-size: 11px;
+	padding-left: 200px;
+	padding-top: 20px;
+}
+
+.footer a {
+	font-size: 11px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
